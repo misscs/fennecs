@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'AI-powered social research | Pol.is',
+    description: "Pol.is helps you uncover what people are thinking.",
+    url: "https://pol.is"
   },
   plugins: ['gatsby-plugin-react-helmet'],
 };

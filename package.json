@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "great-polis-landers",
+  "description": "Pol.is site pages.",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "cs <cs@compositescollective.com>",
   "dependencies": {
     "classnames": "^2.2.5",
     "gatsby": "^1.9.158",

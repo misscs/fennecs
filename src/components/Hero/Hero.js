@@ -5,12 +5,15 @@ import classnames from 'classnames'
 const Hero = ({ headline, subheadline, className }) => {
   return <header className={classnames("mb2", "mb3-m", "mb4-l", "pb3", className)}>
       <div className="ph4 measure">
-        <h1 className="f1 ttc bodoni lh-solid lh-title-m  mt4 ">
+        <h1 className="f1 ttc bodoni lh-solid lh-title-m  mt4 mb3">
           {headline}
         </h1>
-        <p className="f4 f3-l">{subheadline}</p>
-        <a href="https://pol.is/demo" className="ttu">Get Started</a>
-        <p>Already using Polis? 
+        <p className="f4 f3-l mb4">{subheadline}</p>
+        <a href="/demo/" className="br3 ba ph4 pv3 mb2 dib tc ttu fw6 bg-blue white justify-center link">
+          Get Started
+        </a>
+        <p>
+          Already using Polis?
           <a href="https://pol.is/home/signin" className="link ml2">
             Sign In
           </a>

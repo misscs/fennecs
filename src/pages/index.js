@@ -1,13 +1,15 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import Hero from '../components/Hero/Hero'
+
 
 const IndexPage = () => (
   <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Hero
+      headline="Know what your society is thinking"
+      subheadline="Polis is a social research platform that helps you gather insights."
+      className="page-header"
+    />
   </div>
-)
+);
 
 export default IndexPage

@@ -1,6 +1,7 @@
 import React from 'react'
 import Hero from '../components/Hero/Hero'
 import Trust from "../components/Trust/Trust";
+import CTA from "../components/CTA/CTA";
 
 
 const IndexPage = () => (
@@ -14,6 +15,7 @@ const IndexPage = () => (
       headline="You’re in good company"
       subheadline="Polis is trusted by governments, universities, non-profits, movements, and large organizations."
     />
+    <CTA />
   </div>
 );
 

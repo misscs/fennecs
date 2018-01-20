@@ -7,7 +7,7 @@ import Footer from "../components/Footer/Footer";
 import "./index.css"
 
 const TemplateWrapper = ({ children, data }) => (
-  <div className="pt6">
+  <div className="pt6 avenir">
     <Head data={data} />
     <Nav />
     <main role="main" className="center mw8">

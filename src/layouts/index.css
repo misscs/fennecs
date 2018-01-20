@@ -6,3 +6,11 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+.mra {
+  margin-right: auto;
+}
+
+.mla {
+  margin-left: auto;
+}

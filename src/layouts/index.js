@@ -1,35 +1,53 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
+import React from "react";
+import PropTypes from "prop-types";
+import Head from "../components/Head/Head";
+import Nav from "../components/Nav/Nav";
+import Footer from "../components/Footer/Footer";
 
-import Header from '../components/Header'
-import './index.css'
+import "./index.css"
 
-const TemplateWrapper = ({ children }) => (
-  <div>
-    <Helmet
-      title="Gatsby Default Starter"
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
-      ]}
-    />
-    <Header />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
+const TemplateWrapper = ({ children, data }) => (
+  <div className="pt6">
+    <Head data={data} />
+    <Nav />
+    <main role="main" className="center mw8">
       {children()}
-    </div>
+    </main>
+    <Footer
+      social={data.dataYaml.footer.social}
+      content={data.dataYaml.footer.groups}
+      data={data.dataYaml.footer}
+    />
   </div>
-)
+);
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
-}
+  children: PropTypes.func
+};
 
-export default TemplateWrapper
+export default TemplateWrapper;
+
+export const query = graphql`
+  query LayoutQuery {
+    site {
+      siteMetadata {
+        title
+        description
+        url
+      }
+    }
+    dataYaml {
+      footer {
+        copyright
+        social
+        groups {
+          heading
+          links {
+            url
+            title
+          }
+        }
+      }
+    }
+  }
+`;

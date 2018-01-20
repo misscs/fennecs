@@ -28,7 +28,7 @@ class Nav extends React.Component {
           <a href="https://pol.is/home/signin" className="link mr4 white">
             {t.signin}
           </a>
-          <a href="/demo/" ref={button => (this.button = button)} className="br2 ba ph2 pv2 white w-100 w-auto-ns mt3 mt0-ns ph3 link">
+          <a href="/demo/" ref={button => (this.button = button)} className="br2 ba ph2 pv2  tc white   w-100 w-auto-ns   mt3 mt0-ns link">
             {t.cta}
           </a>
         </div>

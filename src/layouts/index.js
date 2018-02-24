@@ -6,6 +6,50 @@ import Footer from "../components/Footer/Footer";
 
 import "./index.css"
 
+const localData = {
+  footer: {
+    copyright: "Polis Technology Inc. All Rights Reserved.",
+    social: ["https://github.com/pol-is/", "https://twitter.com/usepolis"],
+    groups: [
+      {
+        heading: "Company",
+        links: [
+          {
+            title: "About",
+            url: "https://pol.is/company"
+          },
+          {
+            title: "Blog",
+            url: "https://blog.pol.is/"
+          }
+        ]
+      },
+      {
+        heading: "Support",
+        links: [
+          {
+            title: "FAQ",
+            url: "https://pol.is/company"
+          }
+        ]
+      },
+      {
+        heading: "Legal",
+        links: [
+          {
+            title: "Terms",
+            url: "https://pol.is/tos"
+          },
+          {
+            title: "Privacy",
+            url: "https://pol.is/privacy"
+          }
+        ]
+      }
+    ]
+  }
+};
+
 const TemplateWrapper = ({ children, data }) => (
   <div className="pt6 avenir">
     <Head data={data} />
@@ -14,9 +58,9 @@ const TemplateWrapper = ({ children, data }) => (
       {children()}
     </main>
     <Footer
-      social={data.dataYaml.footer.social}
-      content={data.dataYaml.footer.groups}
-      data={data.dataYaml.footer}
+      social={localData.footer.social}
+      content={localData.footer.groups}
+      data={localData.footer}
     />
   </div>
 );
@@ -34,19 +78,6 @@ export const query = graphql`
         title
         description
         url
-      }
-    }
-    dataYaml {
-      footer {
-        copyright
-        social
-        groups {
-          heading
-          links {
-            url
-            title
-          }
-        }
       }
     }
   }

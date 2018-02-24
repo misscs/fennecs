@@ -12,14 +12,15 @@ const Footer = ({ social, content, data }) => {
   return (
     <footer
       role="contentinfo"
-      className="bg-dark-blue white pl3 pl4-ns pr4 pr6-large pt4 pb5 mt5 flex flex-wrap justify-between items-start cb"
     >
+    <div className="bg-blue white pl3 pl4-ns pr4 pr6-l pt4 pb5 mt5 flex flex-column flex-row-ns justify-between items-start cb">
+
       <Logo width="60px" height="32px" />
 
       {content.map((group, i) => (
         <div key={group.heading}>
-          <h4 className="f4 white mb3 fw3 tu">{group.heading}</h4>
-          <ul className="list">
+          <h4 className="f5 white mb3 fw4 ttu">{group.heading}</h4>
+          <ul className="list mb4">
             {group.links.map((link, i) => (
               <ListItem key={i} className="f6 mb3">
                 <a href={link.url} className="white link">
@@ -30,15 +31,15 @@ const Footer = ({ social, content, data }) => {
           </ul>
         </div>
       ))}
-
-      <div className="mt4 mt0-ns w-100 w-auto-ns">
-        <p>&copy; {currentYear} {data.copyright }</p>
+    </div>
+      <div className="f6 w-100 w-auto-ns bg-dark-blue flex justify-end items-center ph3 ph4-ns pv3">
+        <p className="mra white">&copy; {currentYear} {data.copyright }</p>
         {social.map((url, i) => (
           <SocialIcon
             key={`icon-${i}`}
             url={url}
             color="white"
-            className="mr3 mt3"
+            className="mr3"
           />
         ))}
       </div>

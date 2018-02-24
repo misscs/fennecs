@@ -1,7 +1,7 @@
 {
   "name": "great-polis-landers",
   "description": "Pol.is site pages.",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "author": "cs <cs@compositescollective.com>",
   "dependencies": {
     "classnames": "^2.2.5",

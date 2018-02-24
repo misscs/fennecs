@@ -5,20 +5,20 @@ import Figure from '../Core/Image/Figure'
 
 const Trust = ({ headline, subheadline, className }) => {
   return <section className={classnames("mb2", "mb3-m", "mb4-l", "ph3", "pv4", "bg-light-blue", className)}>
-      <header className="ph4 tc center">
+      <header className="ph4 tc-ns center">
         <h2 className="f2 ttc bodoni lh-solid lh-title-m  mb3 ">
           {headline}
         </h2>
-        <p className="f4 f3-l measure center">{subheadline}</p>
+        <p className="f4 f3-l mb4 measure center lh-copy">{subheadline}</p>
       </header>
 
       <div className="flex flex-wrap justify-center">
-        <Figure src="http://via.placeholder.com/150x150" />
-        <Figure src="http://via.placeholder.com/150x150" />
-        <Figure src="http://via.placeholder.com/150x150" />
-        <Figure src="http://via.placeholder.com/150x150" />
+        <Figure src="http://via.placeholder.com/125x125" className="mh1 mb2" />
+        <Figure src="http://via.placeholder.com/125x125" className="mh1 mb2" />
+        <Figure src="http://via.placeholder.com/125x125" className="mh1 mb2" />
+        <Figure src="http://via.placeholder.com/125x125" className="mh1 mb2" />
       </div>
-    </section>
+    </section>;
 };
 
 Trust.propTypes = {

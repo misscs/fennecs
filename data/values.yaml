@@ -1,0 +1,23 @@
+values:
+  headline: "Our mission is to help people understand each other"
+  props: 
+    -
+      src: "http://via.placeholder.com/75x75"
+      headline: Open source
+      teaser: So fair
+    -
+      src: "http://via.placeholder.com/75x75"
+      headline: Reports
+      teaser: So cool
+    -
+      src: "http://via.placeholder.com/75x75"
+      headline: Realtime
+      teaser: So fast
+    -
+      src: "http://via.placeholder.com/75x75"
+      headline: Smart
+      teaser: So oo la la
+    -
+      src: "http://via.placeholder.com/75x75"
+      headline: Smart
+      teaser: So oo la la

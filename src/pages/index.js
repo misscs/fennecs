@@ -14,11 +14,12 @@ const IndexPage = ({ data }) => (
     <StackedCTA
       headline="Don't worry, participants will not see this page."
       subheadline="If you plan on having others log into your instance to create conversations, you may want to relace this page to welcome them."
+      className="w-50-l w-70-m mla bl b--yellow"
     />
     <FeatureSection  />
     <Trust
       headline="Trusted"
-      className="bg-washed-yellow pv4"
+      className="pv4 "
     />
 
     <Trust

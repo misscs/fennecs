@@ -5,7 +5,7 @@ import Figure from '../Core/Image/Figure'
 
 const Trust = ({ headline, subheadline, className }) => {
   return <section className={classnames("ph2", className)}>
-      <header className="ph5 tc-ns center">
+      <header className="ph5 tc-ns center mr-auto">
         <h2 className="f3 ttc lh-solid lh-title-m  mb5 fw4 ">
           {headline}
         </h2>

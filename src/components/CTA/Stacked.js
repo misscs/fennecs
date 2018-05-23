@@ -4,16 +4,16 @@ import classnames from "classnames";
 import Figure from '../Core/Image/Figure'
 
 const StatckedCTA = ({ headline, subheadline, className }) => {
-  return <section className={classnames("mb2", "mb3-m", "mb4-l", "ph3", "pv4", "bg-washed-yellow", className)}>
-      <header className="ph4 tc-ns center">
-        <h2 className="f2 ttc bodoni lh-solid lh-title-m  mb3 mb5-l fw4">
+  return <section className={classnames("mb2", "mb3-m", "mb4-l", "ph3", "ph5-l", "pv4", "bg-washed-yellow", className)}>
+      <header className="">
+        <h2 className="f4 ttc bodoni lh-title  mb3 fw5">
           {headline}
         </h2>
-        <p className="f4 f3-l mb4 measure center lh-copy">{subheadline}</p>
+        <p className="f5 mb4 measure lh-copy">{subheadline}</p>
       </header>
 
-      <div className="flex flex-wrap justify-center">
-        <a href="/demo/" className="br3 ba ph4 pv3 mb3 dib tc fw5 bg-blue white justify-center link">
+      <div>
+        <a href="/demo/" className="bt b--yellow dib pt3 mt2 link light-blue">
           Learn How to Customize this page
         </a>
       </div>

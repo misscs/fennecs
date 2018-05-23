@@ -39,20 +39,20 @@ const localData = {
 
 
 const FeatureSection = ({ data }) => {
-  return <section className={classnames("mb2", "mb3-m", "mb4-l", "ph5", "pv4","center")}>
-      <header className="ph4">
-        <h2 className="f2 f1-l ttc bodoni lh-copy  mb5 fw4 mw7 ">
+  return <section className={classnames("mb2 mt5-l", "mb3-m", "mb4-l", "ph5-l", "pv4","center bg-near-white")}>
+      <header className="ph4 ph2-m tc-m mw6-m center pt4-l">
+        <h2 className="f2 f1-l ttc lh-copy  mb5 fw4 mw9">
           { localData.values.headline }
         </h2>
         {/* <p className="f4 f3-l measure center">{localData.values.subheadline}</p> */}
       </header>
 
-      <div className="flex flex-column flex-row-ns flex-wrap-ns">
+      <div className="flex flex-column flex-row-ns flex-wrap-ns justify-center-m">
         {localData.values.props.map(item => (
           <PropItem
             headline={item.headline}
             teaser={item.teaser}
-            classNames = "w-40 bt bw1 b--light-blue shadow-2 ph3 pv4 ma4 flex"
+            classNames = "w-40-ns bg-white bt bw1 b--light-blue shadow-2 ph3 pv4 ma4-l ma3 mb4 mt2  flex flex-column flex-row-l"
             btn={item.btn}
           />
         ))}

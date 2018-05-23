@@ -8,26 +8,30 @@ const localData = {
     headline: "Our mission is to help people understand each other",
     props: [
       {
-        src: "http://via.placeholder.com/75x75",
-        headline: "Easy to get started",
-        teaser:
-          "Create a conversation in minutes, see results in under an hour."
-      },
-      {
+        btn: "Learn more",
         src: "http://via.placeholder.com/75x75",
         headline: "Participation & Engagement",
         teaser:
-          "With Pol.is, we see significantly greater participation metrics compared to traditional surveys. Your participants get a chance to hear and to be heard."
+          "Polis is a system for gathering and analyzing opinions from large groups of people in real time. "
       },
       {
+        btn: "Learn more",
         src: "http://via.placeholder.com/75x75",
-        headline: "Insights you wouldn’t otherwise get",
-        teaser: "Get rich feedback from participants in an easy to understand report."
+        headline: "Documentation",
+        teaser:
+          "Polis features extensive documentation, both about its technical features and implementation methodology best practices."
       },
       {
+        btn: "Learn more",
         src: "http://via.placeholder.com/75x75",
-        headline: "AI-enabled analytics",
-        teaser: "Results are automatically clustered to form opinions groups, then sorted into consensus, majority, and minority opinions."
+        headline: "Internaltional Community",
+        teaser: "There is a community of people around the world using Polis. Connect with them here"
+      },
+      {
+        btn: "Lean more",
+        src: "http://via.placeholder.com/75x75",
+        headline: "Open by Default",
+        teaser: "Polis is open source software. Find it here Github."
       }
     ]
   }
@@ -35,19 +39,21 @@ const localData = {
 
 
 const FeatureSection = ({ data }) => {
-  return <section className={classnames("mb2", "mb3-m", "mb4-l", "ph3", "pv4","center", "mw8")}>
-      <header className="ph4 mw7 center tc">
-        <h2 className="f2 ttc bodoni lh-title  mb5 ">
+  return <section className={classnames("mb2", "mb3-m", "mb4-l", "ph5", "pv4","center")}>
+      <header className="ph4">
+        <h2 className="f2 f1-l ttc bodoni lh-copy  mb5 fw4 mw7 ">
           { localData.values.headline }
         </h2>
         {/* <p className="f4 f3-l measure center">{localData.values.subheadline}</p> */}
       </header>
 
-      <div className="flex flex-column flex-row-ns flex-wrap-ns mw7-ns center ph4-ns">
+      <div className="flex flex-column flex-row-ns flex-wrap-ns">
         {localData.values.props.map(item => (
           <PropItem
             headline={item.headline}
             teaser={item.teaser}
+            classNames = "w-40 bt bw1 b--light-blue shadow-2 ph3 pv4 ma4 flex"
+            btn={item.btn}
           />
         ))}
       </div>

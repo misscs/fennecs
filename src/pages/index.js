@@ -1,22 +1,32 @@
 import React from 'react'
 import Hero from '../components/Hero/Hero'
 import Trust from "../components/Trust/Trust";
-import CTA from "../components/CTA/CTA";
+import StackedCTA from "../components/CTA/Stacked";
 import FeatureSection from "../components/Features/FeatureSection";
 
 const IndexPage = ({ data }) => (
-  <div>
+  <div className="black-70">
     <Hero
-      headline="Know what your society is thinking"
-      subheadline="Polis helps organizations understand themselves. Get a summary visualization of all the viewpoints to move a conversation forward."
+      headline="You're on your way to know what your community is thinking—"
+      subheadline="Your Polis instance is running successfully!"
       className="page-header"
     />
-    <Trust
-      headline="You’re in good company"
-      subheadline="Polis is trusted by governments, universities, non-profits, movements, and large organizations."
+    <StackedCTA
+      headline="Don't worry, participants will not see this page."
+      subheadline="If you plan on having others log into your instance to create conversations, you may want to relace this page to welcome them."
     />
     <FeatureSection  />
-    <CTA />
+    <Trust
+      headline="Trusted"
+      className="bg-washed-yellow pv4"
+    />
+
+    <Trust
+      headline="Featured in media around the world"
+      className="pv6"
+
+    />
+
   </div>
 );
 

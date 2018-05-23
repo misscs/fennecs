@@ -13,7 +13,7 @@ const Footer = ({ social, content, data }) => {
     <footer
       role="contentinfo"
     >
-    <div className="bg-blue white pl3 pl4-ns pr4 pr6-l pt4 pb5 mt5 flex flex-column flex-row-ns justify-between items-start cb">
+    <div className="bg-blue white pl3 pl4-ns pr4 pr6-l pt4 pb5 flex flex-column flex-row-ns justify-between items-start cb">
 
       <Logo width="60px" height="32px" />
 

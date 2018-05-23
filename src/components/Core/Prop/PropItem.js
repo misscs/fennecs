@@ -1,19 +1,23 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Link from "gatsby-link";
+import classnames from "classnames";
 
 import Figure from "../Image/Figure"
 
-const PropItem = ({ headline, teaser }) => {
-
+const PropItem = ({ headline, teaser, btn, classNames }) => {
   return (
-    <article className="flex-column w-100 w-50-ns ph4 ph0-ns pr5-l mb5">
+    <article
+       className={classNames}
+      >
       <Figure
         src="http://via.placeholder.com/75x75"
       />
-      <div className="">
-        <h4 className="ttc">{headline}</h4>
-        <p>{teaser}</p>
+      <div className="ml3">
+        <h4 className="ttc fw3 f3 mt2">{headline}</h4>
+        <p className="lh-copy">{teaser}</p>
+        <a href="/demo/" className="br2 ba ph3 pv2 mb3 dib tc fw4 ba b--blue blue justify-center mt4 link">
+          {btn}
+        </a>
       </div>
     </article>
   );
